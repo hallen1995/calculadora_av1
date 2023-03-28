@@ -40,7 +40,6 @@ class Calculadora:
         self.resultado = self.n1 % self.n2
         return self.resultado
 
-
 def continuar(entrada):
     if entrada:
         return True
@@ -124,4 +123,6 @@ def menu():
             calcular = continuar(input("Digite algum valor para continuar ou aperte ENTER para sair da Calculadora."))
             print("Calculadora Encerrada!")
 
+
 menu()
+print("Trabalho Concluído!!")
