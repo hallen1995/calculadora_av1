@@ -74,54 +74,61 @@ def menu():
             opcao = int(opcao)
             print(f"A operação matemática escolhida é {opc[opcao]}")
             print("Apenas números inteiros serão aceitou nas operações!!!")
-        
+              
         if opcao == 1:
             n1 = int(input("Digite o penúltimo número de seu RU:"))
             n2 = int(input("Digite o último número de seu RU:"))
             resultado = calc.somar(n1,n2)
             print(f"O valor da operação adição é {resultado}")
             calcular = continuar(input("Digite algum valor para continuar ou aperte ENTER para sair da Calculadora."))
-            print("Calculadora Encerrada!")
-
+            if opcao != ("1","2","3","4","5","6"):
+                print("Você apertou ENTER, calculadora encerrada!")
+                
         elif opcao == 2:
             n1 = int(input("Digite o penúltimo número de seu RU:"))
             n2 = int(input("Digite o último número de seu RU:"))
             resultado = calc.subtrair(n1,n2)
             print(f"O valor da operação subtração é {resultado}")
             calcular = continuar(input("Digite algum valor para continuar ou aperte ENTER para sair da Calculadora."))
-            print("Calculadora Encerrada!")
-
+            if opcao != ("1","2","3","4","5","6"):
+                print("Você apertou ENTER, calculadora encerrada!")
+          
         elif opcao == 3:
             n1 = int(input("Digite o penúltimo número de seu RU:"))
             n2 = int(input("Digite o último número de seu RU:"))
             resultado = calc.multiplicar(n1,n2)
             print(f"O valor da operação multiplicação é {resultado}")
             calcular = continuar(input("Digite algum valor para continuar ou aperte ENTER para sair da Calculadora."))
-            print("Calculadora Encerrada!")
-
+            if opcao != ("1","2","3","4","5","6"):
+                print("Você apertou ENTER, calculadora encerrada!")
+                
         elif opcao == 4:
             n1 = int(input("Digite o penúltimo número de seu RU:"))
             n2 = int(input("Digite o último número de seu RU:"))
             resultado = calc.dividir(n1,n2)
             print(f"O valor da operação divisão é {resultado}")
             calcular = continuar(input("Digite algum valor para continuar ou aperte ENTER para sair da Calculadora."))
-            print("Calculadora Encerrada!")
-
+            if opcao != ("1","2","3","4","5","6"):
+                print("Você apertou ENTER, calculadora encerrada!")
+                
         elif opcao == 5:
             n1 = int(input("Digite o penúltimo número de seu RU:"))
             n2 = int(input("Digite o último número de seu RU:"))
             resultado = calc.expoente(n1,n2)
             print(f"O valor da operação exponenciação é {resultado}")
             calcular = continuar(input("Digite algum valor para continuar ou aperte ENTER para sair da Calculadora."))
-            print("Calculadora Encerrada!")
-
+            if opcao != ("1","2","3","4","5","6"):
+                print("Você apertou ENTER, calculadora encerrada!")
+                
         elif opcao == 6:
             n1 = int(input("Digite o penúltimo número de seu RU:"))
             n2 = int(input("Digite o último número de seu RU:"))
             resultado = calc.resto(n1,n2)
             print(f"O valor da operação módulo (resto) é {resultado}")
             calcular = continuar(input("Digite algum valor para continuar ou aperte ENTER para sair da Calculadora."))
-            print("Calculadora Encerrada!")
+            if opcao != ("1","2","3","4","5","6"):
+                print("Você apertou ENTER, calculadora encerrada!")
+                
 
-
+        
 menu()
